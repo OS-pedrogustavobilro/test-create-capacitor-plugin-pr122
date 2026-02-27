@@ -1,0 +1,34 @@
+
+up to date, audited 321 packages in 2s
+
+122 packages are looking for funding
+  run `npm fund` for details
+
+7 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> advanced-features-plugin@0.0.1 build
+> npm run clean && npm run docgen && tsc && rollup -c rollup.config.mjs
+
+
+> advanced-features-plugin@0.0.1 clean
+> rimraf ./dist
+
+
+> advanced-features-plugin@0.0.1 docgen
+> docgen --api AdvancedFeaturesPlugin --output-readme README.md --output-json dist/docs.json
+
+
+✔️ DocGen Output: /Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/test-create-capacitor-plugin-pr122/test-results/advanced-features-plugin/dist/docs.json
+✔️ DocGen Output: /Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/test-create-capacitor-plugin-pr122/test-results/advanced-features-plugin/README.md
+
+[36m
+[1mdist/esm/index.js[22m → [1mdist/plugin.js, dist/plugin.cjs.js[22m...[39m
+[32mcreated [1mdist/plugin.js, dist/plugin.cjs.js[22m in [1m21ms[22m[39m

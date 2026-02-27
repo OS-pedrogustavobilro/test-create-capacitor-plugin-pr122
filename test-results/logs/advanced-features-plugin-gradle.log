@@ -1,0 +1,230 @@
+> Task :clean UP-TO-DATE
+> Task :capacitor-android:clean UP-TO-DATE
+> Task :preBuild UP-TO-DATE
+> Task :preDebugBuild UP-TO-DATE
+> Task :capacitor-android:preBuild UP-TO-DATE
+> Task :capacitor-android:preDebugBuild UP-TO-DATE
+> Task :capacitor-android:writeDebugAarMetadata
+> Task :mergeDebugJniLibFolders
+> Task :mergeDebugNativeLibs NO-SOURCE
+> Task :stripDebugDebugSymbols NO-SOURCE
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :copyDebugJniLibsProjectAndLocalJars
+> Task :generateDebugResValues
+> Task :generateDebugResources
+> Task :checkDebugAarMetadata
+> Task :packageDebugResources
+> Task :processDebugNavigationResources
+> Task :capacitor-android:generateDebugResValues
+> Task :parseDebugLocalResources
+> Task :capacitor-android:generateDebugResources
+> Task :generateDebugRFile
+> Task :capacitor-android:packageDebugResources
+> Task :capacitor-android:processDebugNavigationResources
+> Task :extractDeepLinksForAarDebug
+> Task :capacitor-android:javaPreCompileDebug
+> Task :mergeDebugShaders
+> Task :compileDebugShaders NO-SOURCE
+> Task :generateDebugAssets UP-TO-DATE
+> Task :mergeDebugAssets
+> Task :capacitor-android:parseDebugLocalResources
+> Task :javaPreCompileDebug
+> Task :prepareDebugArtProfile
+> Task :prepareLintJarForPublish
+> Task :capacitor-android:generateDebugRFile
+> Task :processDebugManifest
+
+> Task :capacitor-android:compileDebugJavaWithJavac
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :preReleaseBuild UP-TO-DATE
+> Task :capacitor-android:preReleaseBuild UP-TO-DATE
+> Task :writeDebugAarMetadata
+> Task :capacitor-android:writeReleaseAarMetadata
+> Task :mergeReleaseJniLibFolders
+> Task :mergeReleaseNativeLibs NO-SOURCE
+> Task :stripReleaseDebugSymbols NO-SOURCE
+> Task :checkReleaseAarMetadata
+> Task :copyReleaseJniLibsProjectAndLocalJars
+> Task :generateReleaseResValues
+> Task :extractDeepLinksForAarRelease
+> Task :generateReleaseResources
+> Task :capacitor-android:bundleLibCompileToJarDebug
+> Task :packageReleaseResources
+> Task :processReleaseNavigationResources
+> Task :capacitor-android:generateReleaseResValues
+> Task :capacitor-android:generateReleaseResources
+> Task :parseReleaseLocalResources
+> Task :capacitor-android:packageReleaseResources
+> Task :capacitor-android:processReleaseNavigationResources
+> Task :generateReleaseRFile
+> Task :capacitor-android:javaPreCompileRelease
+> Task :mergeReleaseShaders
+> Task :capacitor-android:parseReleaseLocalResources
+> Task :compileReleaseShaders NO-SOURCE
+> Task :generateReleaseAssets UP-TO-DATE
+> Task :mergeReleaseAssets
+> Task :capacitor-android:generateReleaseRFile
+> Task :javaPreCompileRelease
+> Task :prepareReleaseArtProfile
+
+> Task :capacitor-android:compileReleaseJavaWithJavac
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :writeReleaseAarMetadata
+> Task :capacitor-android:bundleLibCompileToJarRelease
+> Task :mapReleaseSourceSetPaths
+> Task :processReleaseManifest
+> Task :compileDebugKotlin
+> Task :compileReleaseKotlin
+> Task :mergeReleaseResources
+> Task :extractDebugAnnotations
+> Task :compileDebugJavaWithJavac NO-SOURCE
+> Task :mergeDebugGeneratedProguardFiles
+> Task :mergeDebugConsumerProguardFiles
+> Task :processDebugJavaRes
+> Task :extractReleaseAnnotations
+> Task :compileReleaseJavaWithJavac NO-SOURCE
+> Task :mergeReleaseGeneratedProguardFiles
+> Task :mergeReleaseConsumerProguardFiles
+> Task :processReleaseJavaRes
+> Task :capacitor-android:mergeDebugJniLibFolders
+> Task :capacitor-android:mergeDebugNativeLibs NO-SOURCE
+> Task :capacitor-android:stripDebugDebugSymbols NO-SOURCE
+> Task :capacitor-android:checkDebugAarMetadata
+> Task :capacitor-android:copyDebugJniLibsProjectAndLocalJars
+> Task :mergeDebugJavaResource
+> Task :mergeReleaseJavaResource
+> Task :capacitor-android:extractDebugAnnotations
+> Task :syncDebugLibJars
+> Task :capacitor-android:compileReleaseLibraryResources
+> Task :bundleDebugAar
+> Task :assembleDebug
+> Task :syncReleaseLibJars
+> Task :bundleReleaseAar
+> Task :bundleDebugLocalLintAar
+> Task :capacitor-android:extractDeepLinksForAarDebug
+> Task :capacitor-android:mergeDebugShaders
+> Task :capacitor-android:compileDebugShaders NO-SOURCE
+> Task :capacitor-android:generateDebugAssets UP-TO-DATE
+> Task :capacitor-android:mergeDebugAssets
+> Task :capacitor-android:mergeDebugGeneratedProguardFiles
+> Task :capacitor-android:mergeDebugConsumerProguardFiles
+> Task :capacitor-android:prepareDebugArtProfile
+> Task :capacitor-android:prepareLintJarForPublish
+> Task :capacitor-android:processDebugJavaRes NO-SOURCE
+> Task :preDebugAndroidTestBuild UP-TO-DATE
+> Task :generateDebugAndroidTestResValues
+> Task :capacitor-android:mergeDebugJavaResource
+> Task :bundleLibRuntimeToJarDebug
+> Task :writeDebugLintModelMetadata
+> Task :capacitor-android:processDebugManifest
+> Task :capacitor-android:syncDebugLibJars
+> Task :capacitor-android:bundleDebugLocalLintAar
+> Task :createFullJarDebug
+> Task :capacitor-android:writeDebugLintModelMetadata
+> Task :capacitor-android:bundleLibRuntimeToJarDebug
+> Task :extractProguardFiles
+> Task :capacitor-android:createFullJarDebug
+> Task :generateDebugAndroidTestLintModel
+> Task :capacitor-android:extractProguardFiles
+> Task :capacitor-android:generateDebugLintModel
+> Task :generateDebugLintReportModel
+> Task :preDebugUnitTestBuild UP-TO-DATE
+> Task :generateDebugUnitTestLintModel
+> Task :capacitor-android:preDebugAndroidTestBuild UP-TO-DATE
+> Task :capacitor-android:generateDebugAndroidTestResValues
+> Task :capacitor-android:generateDebugAndroidTestLintModel
+> Task :capacitor-android:preDebugUnitTestBuild UP-TO-DATE
+> Task :capacitor-android:generateDebugUnitTestLintModel
+> Task :bundleLibCompileToJarDebug
+> Task :javaPreCompileDebugUnitTest
+> Task :preReleaseUnitTestBuild UP-TO-DATE
+> Task :bundleLibCompileToJarRelease
+> Task :bundleLibRuntimeToJarRelease
+> Task :javaPreCompileReleaseUnitTest
+> Task :capacitor-android:processReleaseJavaRes NO-SOURCE
+> Task :capacitor-android:bundleDebugAar
+> Task :capacitor-android:assembleDebug
+> Task :capacitor-android:mergeReleaseJniLibFolders
+> Task :capacitor-android:mergeReleaseNativeLibs NO-SOURCE
+> Task :capacitor-android:stripReleaseDebugSymbols NO-SOURCE
+> Task :capacitor-android:bundleLibRuntimeToJarRelease
+> Task :capacitor-android:copyReleaseJniLibsProjectAndLocalJars
+> Task :capacitor-android:extractDeepLinksForAarRelease
+> Task :capacitor-android:checkReleaseAarMetadata
+> Task :capacitor-android:extractReleaseAnnotations
+> Task :capacitor-android:mergeReleaseShaders
+> Task :capacitor-android:compileReleaseShaders NO-SOURCE
+> Task :capacitor-android:generateReleaseAssets UP-TO-DATE
+> Task :capacitor-android:mergeReleaseAssets
+> Task :capacitor-android:mergeReleaseGeneratedProguardFiles
+> Task :capacitor-android:mergeReleaseConsumerProguardFiles
+> Task :capacitor-android:prepareReleaseArtProfile
+> Task :capacitor-android:mergeReleaseJavaResource
+> Task :capacitor-android:processReleaseManifest
+> Task :capacitor-android:mapReleaseSourceSetPaths
+> Task :capacitor-android:syncReleaseLibJars
+> Task :generateDebugUnitTestStubRFile
+> Task :generateReleaseUnitTestStubRFile
+> Task :capacitor-android:bundleReleaseAar
+> Task :lintAnalyzeDebugAndroidTest
+> Task :verifyReleaseResources
+> Task :compileReleaseUnitTestKotlin
+> Task :compileDebugUnitTestKotlin
+> Task :capacitor-android:mergeReleaseResources
+> Task :assembleRelease
+> Task :assemble
+> Task :compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :processDebugUnitTestJavaRes
+> Task :lintAnalyzeDebugUnitTest
+> Task :testDebugUnitTest
+> Task :compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :processReleaseUnitTestJavaRes
+> Task :capacitor-android:lintAnalyzeDebugAndroidTest
+> Task :testReleaseUnitTest
+> Task :test
+> Task :capacitor-android:generateDebugLintReportModel
+> Task :capacitor-android:processDebugUnitTestJavaRes NO-SOURCE
+> Task :capacitor-android:preReleaseUnitTestBuild UP-TO-DATE
+> Task :capacitor-android:javaPreCompileDebugUnitTest
+> Task :capacitor-android:javaPreCompileReleaseUnitTest
+> Task :capacitor-android:generateDebugUnitTestStubRFile
+> Task :capacitor-android:processReleaseUnitTestJavaRes NO-SOURCE
+> Task :capacitor-android:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :capacitor-android:testDebugUnitTest NO-SOURCE
+> Task :capacitor-android:generateReleaseUnitTestStubRFile
+> Task :capacitor-android:compileReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :capacitor-android:testReleaseUnitTest NO-SOURCE
+> Task :capacitor-android:test UP-TO-DATE
+> Task :capacitor-android:lintAnalyzeDebugUnitTest
+> Task :capacitor-android:verifyReleaseResources
+> Task :capacitor-android:assembleRelease
+> Task :capacitor-android:assemble
+> Task :capacitor-android:lintAnalyzeDebug
+
+> Task :capacitor-android:lintReportDebug
+Lint found no new issues (and 6 errors filtered by baseline lint-baseline.xml)
+
+6 errors/warnings were listed in the baseline file (/Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/test-create-capacitor-plugin-pr122/test-results/advanced-features-plugin/node_modules/@capacitor/android/capacitor/lint-baseline.xml) but not found in the project; perhaps they have been fixed?
+
+> Task :capacitor-android:lintDebug
+> Task :capacitor-android:lint
+> Task :capacitor-android:check
+> Task :capacitor-android:build
+> Task :lintAnalyzeDebug
+
+> Task :lintReportDebug
+Wrote HTML report to file:///Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/test-create-capacitor-plugin-pr122/test-results/advanced-features-plugin/android/build/reports/lint-results-debug.html
+
+> Task :lintDebug
+> Task :lint
+> Task :check
+> Task :build
+
+[Incubating] Problems report is available at: file:///Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/test-create-capacitor-plugin-pr122/test-results/advanced-features-plugin/android/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 27s
+154 actionable tasks: 152 executed, 2 up-to-date

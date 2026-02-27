@@ -1,0 +1,26 @@
+
+up to date, audited 571 packages in 2s
+
+215 packages are looking for funding
+  run `npm fund` for details
+
+6 low severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> @capacitor/create-plugin@0.20.2 build
+> npm run clean && npm run pack-assets && tsc
+
+
+> @capacitor/create-plugin@0.20.2 clean
+> rimraf ./dist
+
+
+> @capacitor/create-plugin@0.20.2 pack-assets
+> node ./scripts/pack-assets.mjs
+
+Assets copied to /Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/fork-create-capacitor-plugin-pr122-kotlin/assets/plugin-template.tar.gz!
+Assets copied to /Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/fork-create-capacitor-plugin-pr122-kotlin/assets/www-template.tar.gz!

@@ -1,0 +1,290 @@
+Installing dependencies. Please wait...
+
+> npm install --no-package-lock
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 320 packages, and audited 321 packages in 8s
+
+122 packages are looking for funding
+  run `npm fund` for details
+
+7 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> npm run fmt
+
+> simple-plugin@0.0.1 fmt
+> npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- --fix --format
+
+
+> simple-plugin@0.0.1 eslint
+> eslint . --ext ts --fix
+
+
+> simple-plugin@0.0.1 prettier
+> prettier "**/*.{css,html,ts,js,java}" --plugin=prettier-plugin-java --write
+
+android/src/androidTest/java/com/getcapacitor/android/ExampleInstrumentedTest.java 17ms (unchanged)
+android/src/main/java/com/simple/Simple.java 3ms (unchanged)
+android/src/main/java/com/simple/SimplePlugin.java 6ms (unchanged)
+android/src/test/java/com/getcapacitor/ExampleUnitTest.java 1ms (unchanged)
+src/definitions.ts 102ms (unchanged)
+src/index.ts 7ms (unchanged)
+src/web.ts 3ms (unchanged)
+
+> simple-plugin@0.0.1 swiftlint
+> node-swiftlint --fix --format
+
+node-swiftlint: using config from /Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/test-create-capacitor-plugin-pr122/test-results/simple-plugin/package.json
+warning: 'unused_import' should be listed in the 'analyzer_rules' configuration section for more clarity as it is only run by 'swiftlint analyze'.
+Correcting Swift files in current working directory
+Correcting 'Simple.swift' (2/4)
+Correcting 'SimpleTests.swift' (1/4)
+Correcting 'Package.swift' (4/4)
+Correcting 'SimplePlugin.swift' (3/4)
+Done correcting 4 files!
+
+Creating test application for developing plugin...
+
+> npm init @capacitor/app@latest example-app -- --name example-app --app-id com.example.plugin
+
+> simple-plugin@0.0.1 npx
+> create-capacitor-app example-app --name example-app --app-id com.example.plugin
+
+
+🎉 Your Capacitor app is ready to go! 🎉
+
+Next steps:
+  - cd example-app/
+  - install dependencies (e.g. w/ npm install)
+  - npm start
+
+> npm install --no-package-lock --prefix example-app
+
+added 107 packages, and audited 109 packages in 7s
+
+16 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+> npm run build
+
+> simple-plugin@0.0.1 build
+> npm run clean && npm run docgen && tsc && rollup -c rollup.config.mjs
+
+
+> simple-plugin@0.0.1 clean
+> rimraf ./dist
+
+
+> simple-plugin@0.0.1 docgen
+> docgen --api SimplePlugin --output-readme README.md --output-json dist/docs.json
+
+
+✔️ DocGen Output: /Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/test-create-capacitor-plugin-pr122/test-results/simple-plugin/dist/docs.json
+✔️ DocGen Output: /Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/test-create-capacitor-plugin-pr122/test-results/simple-plugin/README.md
+
+[36m
+[1mdist/esm/index.js[22m → [1mdist/plugin.js, dist/plugin.cjs.js[22m...[39m
+[32mcreated [1mdist/plugin.js, dist/plugin.cjs.js[22m in [1m22ms[22m[39m
+
+> npm run build
+
+> capacitor-app@1.0.0 build
+> vite build
+
+vite v7.3.1 building client environment for production...
+transforming...
+✓ 8 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/index.html                 0.96 kB │ gzip: 0.55 kB
+../dist/assets/web-Kg0pQ9Fi.js     0.20 kB │ gzip: 0.17 kB
+../dist/assets/index-Bfc3QUDw.js  21.22 kB │ gzip: 5.77 kB
+✓ built in 127ms
+
+> npx cap copy
+✔ copy web in 7.22ms
+
+> npx cap add ios
+✔ Adding native Xcode project in ios in 18.36ms
+✔ add in 18.68ms
+✔ Copying web assets from dist to ios/App/App/public in 3.60ms
+✔ Creating capacitor.config.json in ios/App/App in 381.37μs
+✔ copy ios in 26.87ms
+✔ Updating iOS plugins in 406.08μs
+[info] All plugins have a Package.swift file and will be included in Package.swift
+[info] Writing Package.swift
+[warn] @capacitor/core@8.1.0 version doesn't match @capacitor/ios@8.0.0 version.
+       Consider updating to a matching version, e.g. w/ npm install @capacitor/core@8.0.0
+[info] Found 1 Capacitor plugin for ios:
+       simple-plugin@0.0.1
+✔ update ios in 16.86ms
+[success] ios platform added!
+Follow the Developer Workflow guide to get building:
+https://capacitorjs.com/docs/basics/workflow
+
+> npx cap add android
+✔ Adding native android project in android in 67.92ms
+✔ add in 68.73ms
+✔ Copying web assets from dist to android/app/src/main/assets/public in 3.55ms
+✔ Creating capacitor.config.json in android/app/src/main/assets in 553.54μs
+✔ copy android in 8.36ms
+✔ Updating Android plugins in 397.21μs
+[info] Found 1 Capacitor plugin for android:
+       simple-plugin@0.0.1
+[warn] @capacitor/core@8.1.0 version doesn't match @capacitor/android@8.0.0 version.
+       Consider updating to a matching version, e.g. w/ npm install @capacitor/core@8.0.0
+✔ update android in 31.56ms
+✔ Syncing Gradle in 6.38s
+[success] android platform added!
+Follow the Developer Workflow guide to get building:
+https://capacitorjs.com/docs/basics/workflow
+Initializing git...
+
+> git init
+Initialized empty Git repository in /Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/test-create-capacitor-plugin-pr122/test-results/simple-plugin/.git/
+
+> git checkout -b main
+Switched to a new branch 'main'
+
+> git add -A
+warning: in the working copy of 'android/gradlew.bat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'example-app/android/gradlew.bat', CRLF will be replaced by LF the next time Git touches it
+
+> git commit -m "Initial commit" --no-gpg-sign
+[main (root-commit) e557902] Initial commit
+ 111 files changed, 2669 insertions(+)
+ create mode 100644 .eslintignore
+ create mode 100644 .gitignore
+ create mode 100644 .prettierignore
+ create mode 100644 CONTRIBUTING.md
+ create mode 100644 Package.swift
+ create mode 100644 README.md
+ create mode 100644 SimplePlugin.podspec
+ create mode 100644 android/.gitignore
+ create mode 100644 android/build.gradle
+ create mode 100644 android/gradle.properties
+ create mode 100644 android/gradle/wrapper/gradle-wrapper.jar
+ create mode 100644 android/gradle/wrapper/gradle-wrapper.properties
+ create mode 100755 android/gradlew
+ create mode 100644 android/gradlew.bat
+ create mode 100644 android/proguard-rules.pro
+ create mode 100644 android/settings.gradle
+ create mode 100644 android/src/androidTest/java/com/getcapacitor/android/ExampleInstrumentedTest.java
+ create mode 100644 android/src/main/AndroidManifest.xml
+ create mode 100644 android/src/main/java/com/simple/Simple.java
+ create mode 100644 android/src/main/java/com/simple/SimplePlugin.java
+ create mode 100644 android/src/main/res/.gitkeep
+ create mode 100644 android/src/test/java/com/getcapacitor/ExampleUnitTest.java
+ create mode 100644 example-app/.gitignore
+ create mode 100644 example-app/README.md
+ create mode 100644 example-app/android/.gitignore
+ create mode 100644 example-app/android/app/.gitignore
+ create mode 100644 example-app/android/app/build.gradle
+ create mode 100644 example-app/android/app/capacitor.build.gradle
+ create mode 100644 example-app/android/app/proguard-rules.pro
+ create mode 100644 example-app/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java
+ create mode 100644 example-app/android/app/src/main/AndroidManifest.xml
+ create mode 100644 example-app/android/app/src/main/java/com/example/plugin/MainActivity.java
+ create mode 100644 example-app/android/app/src/main/res/drawable-land-hdpi/splash.png
+ create mode 100644 example-app/android/app/src/main/res/drawable-land-mdpi/splash.png
+ create mode 100644 example-app/android/app/src/main/res/drawable-land-xhdpi/splash.png
+ create mode 100644 example-app/android/app/src/main/res/drawable-land-xxhdpi/splash.png
+ create mode 100644 example-app/android/app/src/main/res/drawable-land-xxxhdpi/splash.png
+ create mode 100644 example-app/android/app/src/main/res/drawable-port-hdpi/splash.png
+ create mode 100644 example-app/android/app/src/main/res/drawable-port-mdpi/splash.png
+ create mode 100644 example-app/android/app/src/main/res/drawable-port-xhdpi/splash.png
+ create mode 100644 example-app/android/app/src/main/res/drawable-port-xxhdpi/splash.png
+ create mode 100644 example-app/android/app/src/main/res/drawable-port-xxxhdpi/splash.png
+ create mode 100644 example-app/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+ create mode 100644 example-app/android/app/src/main/res/drawable/ic_launcher_background.xml
+ create mode 100644 example-app/android/app/src/main/res/drawable/splash.png
+ create mode 100644 example-app/android/app/src/main/res/layout/activity_main.xml
+ create mode 100644 example-app/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+ create mode 100644 example-app/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+ create mode 100644 example-app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png
+ create mode 100644 example-app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+ create mode 100644 example-app/android/app/src/main/res/values/ic_launcher_background.xml
+ create mode 100644 example-app/android/app/src/main/res/values/strings.xml
+ create mode 100644 example-app/android/app/src/main/res/values/styles.xml
+ create mode 100644 example-app/android/app/src/main/res/xml/file_paths.xml
+ create mode 100644 example-app/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java
+ create mode 100644 example-app/android/build.gradle
+ create mode 100644 example-app/android/capacitor.settings.gradle
+ create mode 100644 example-app/android/gradle.properties
+ create mode 100644 example-app/android/gradle/wrapper/gradle-wrapper.jar
+ create mode 100644 example-app/android/gradle/wrapper/gradle-wrapper.properties
+ create mode 100755 example-app/android/gradlew
+ create mode 100644 example-app/android/gradlew.bat
+ create mode 100644 example-app/android/settings.gradle
+ create mode 100644 example-app/android/variables.gradle
+ create mode 100644 example-app/capacitor.config.json
+ create mode 100644 example-app/ios/.gitignore
+ create mode 100644 example-app/ios/App/App.xcodeproj/project.pbxproj
+ create mode 100644 example-app/ios/App/App.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ create mode 100644 example-app/ios/App/App/AppDelegate.swift
+ create mode 100644 example-app/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png
+ create mode 100644 example-app/ios/App/App/Assets.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 example-app/ios/App/App/Assets.xcassets/Contents.json
+ create mode 100644 example-app/ios/App/App/Assets.xcassets/Splash.imageset/Contents.json
+ create mode 100644 example-app/ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732-1.png
+ create mode 100644 example-app/ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732-2.png
+ create mode 100644 example-app/ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732.png
+ create mode 100644 example-app/ios/App/App/Base.lproj/LaunchScreen.storyboard
+ create mode 100644 example-app/ios/App/App/Base.lproj/Main.storyboard
+ create mode 100644 example-app/ios/App/App/Info.plist
+ create mode 100644 example-app/ios/App/CapApp-SPM/.gitignore
+ create mode 100644 example-app/ios/App/CapApp-SPM/Package.swift
+ create mode 100644 example-app/ios/App/CapApp-SPM/README.md
+ create mode 100644 example-app/ios/App/CapApp-SPM/Sources/CapApp-SPM/CapApp-SPM.swift
+ create mode 100644 example-app/ios/debug.xcconfig
+ create mode 100644 example-app/package.json
+ create mode 100644 example-app/src/index.html
+ create mode 100644 example-app/src/js/example.js
+ create mode 100644 example-app/vite.config.ts
+ create mode 100644 ios/.gitignore
+ create mode 100644 ios/Sources/SimplePlugin/Simple.swift
+ create mode 100644 ios/Sources/SimplePlugin/SimplePlugin.swift
+ create mode 100644 ios/Tests/SimplePluginTests/SimpleTests.swift
+ create mode 100644 package.json
+ create mode 100644 rollup.config.mjs
+ create mode 100644 src/definitions.ts
+ create mode 100644 src/index.ts
+ create mode 100644 src/web.ts
+ create mode 100644 tsconfig.json
+
+🎉 Capacitor plugin generated! 🎉
+
+Next steps:
+  - cd simple-plugin/
+  - Open CONTRIBUTING.md to learn about the npm scripts
+  - Continue following these docs for plugin development: https://capacitorjs.com/docs/plugins/workflow
+  - Questions? Feel free to open a discussion: https://github.com/ionic-team/capacitor/discussions
+  - Learn more about the Capacitor Community: https://github.com/capacitor-community/welcome 💖

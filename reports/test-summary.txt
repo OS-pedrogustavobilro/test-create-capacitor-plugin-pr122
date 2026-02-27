@@ -1,0 +1,13 @@
+================================================================================
+Test Report for PR #122: Kotlin/Java Language Selection
+================================================================================
+
+Date: Fri Feb 27 15:56:21 WET 2026
+Total Tests: 4
+Passed: 4
+Failed: 0
+
+Detailed logs available in: /Users/pedrobilro/Desktop/client_projects/outsystems/source_codes/community_ionic_repos/test-create-capacitor-plugin-pr122/test-results/logs
+
+Result: ALL TESTS PASSED ✓
+================================================================================
